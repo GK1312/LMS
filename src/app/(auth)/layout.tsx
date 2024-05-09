@@ -21,8 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>
-        <h1>Auth layout</h1>
+      <body className={quicksand.className + " w-screen h-screen block"}>
         {children}
       </body>
     </html>

@@ -7,3 +7,20 @@
     text-wrap: balance;
   }
 }
+
+.social_btn {
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+}
+.social_btn:hover {
+  background-color: rgb(0 0 0 / 4%);
+}
+.arrow_icon {
+  opacity: 0;
+  transform: translateX(-0.5rem);
+  transition: all 100ms ease-in-out;
+}
+.social_btn:hover .arrow_icon {
+  opacity: 1;
+  transform: translateX(0);
+}
