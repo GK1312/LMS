@@ -1,6 +1,8 @@
+import React from "react";
+import Link from "next/link";
 import CardContainer from "@/app/components/auth/CardContainer";
 import SocialLogin from "@/app/components/auth/SocialLogin";
-import React from "react";
+import LoginForm from "@/app/components/auth/LoginForm";
 
 const SignInPage = React.memo(function signInPage() {
   return (
@@ -14,6 +16,13 @@ const SignInPage = React.memo(function signInPage() {
               or
             </p>
             <div className="h-[1px] flex flex-row flex-hr items-stretch justify-start bg-hr"></div>
+          </div>
+          <LoginForm />
+          <div className="text-label text-light leading-tight font-normal flex flex-row items-center gap-1">
+            No account?{" "}
+            <Link href={"/"} className="text-accent font-semibold">
+              Sign up
+            </Link>
           </div>
         </CardContainer>
       </main>
