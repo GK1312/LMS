@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import CardContainer from "@/app/components/auth/CardContainer";
-import SocialLogin from "@/app/components/auth/SocialLogin";
 import ResetPasswordForm from "@/app/components/auth/ResetPasswordForm";
 
 const ResetPasswordPage = React.memo(function resetPasswordPage() {

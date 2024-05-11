@@ -43,9 +43,11 @@ const PrimaryInput = React.memo(function PrimaryInput({
           placeholder={placeholder}
           {...register(name, validation)}
           autoComplete="off"
-          className={`w-full px-4 py-2 ${
+          className={`w-full px-4 py-2.5 ${
             type === "password" ? "pr-8" : ""
-          } text-label leading-tight font-normal border border-solid border-hr outline outline-2 outline-transparent outline-offset-2 rounded-md focus:shadow-input-focus transition-all duration-200 ease-in-out`}
+          } text-label leading-tight font-normal border border-solid border-hr outline outline-2 outline-transparent outline-offset-2 rounded-md focus:shadow-input-focus ${
+            isInvalid ? "shadow-input-danger" : ""
+          } transition-all duration-200 ease-in-out`}
         />
         {type === "password" && (
           <div

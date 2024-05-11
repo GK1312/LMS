@@ -26,6 +26,7 @@ const config: Config = {
       boxShadow: {
         "auth-card": "rgba(0, 0, 0, 0.16) 0px 24px 48px",
         "input-focus": "rgb(145, 167, 247) 0px 0px 0px 1px",
+        "input-danger": "rgb(240, 68, 56) 0px 0px 0px 1px",
       },
       colors: {
         light: "rgba(0, 0, 0, 0.65)",
