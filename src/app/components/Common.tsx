@@ -11,7 +11,7 @@ const Loader = React.memo(function loader({
     <div
       className={`loader ${
         size === "xs"
-          ? "w-6"
+          ? "w-5"
           : size === "sm"
           ? "w-8"
           : size === "md"
@@ -23,5 +23,7 @@ const Loader = React.memo(function loader({
     ></div>
   );
 });
+
+Loader.displayName = "LoaderComponent";
 
 export default Loader;
