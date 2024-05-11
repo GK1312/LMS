@@ -7,6 +7,7 @@ import {
   password_validation,
 } from "@/utils/inputValidations";
 import PrimaryInput from "../PrimaryInput";
+import Link from "next/link";
 
 const LoginForm = React.memo(function loginForm() {
   const methods = useForm();
@@ -32,6 +33,12 @@ const LoginForm = React.memo(function loginForm() {
         >
           Continue
         </button>
+        <Link
+          href={"/sign-up"}
+          className="text-label text-accent font-semibold"
+        >
+          Forgot Password
+        </Link>
       </form>
     </FormProvider>
   );

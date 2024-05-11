@@ -34,3 +34,29 @@ export const email_validation = {
     },
   },
 };
+export const mobile_number_validation = {
+  name: "mobileNumber",
+  label: "Mobile Number",
+  type: "tel",
+  id: "mobileNumber",
+  placeholder: "Enter mobile number",
+  validation: {
+    required: {
+      value: true,
+      message: "Mobile number is required.",
+    },
+    pattern: {
+      value: /^[6789]\d{9}$/,
+      message:
+        "Invalid mobile number. Must be 10 digits starting with 6, 7, 8, or 9.",
+    },
+    minLength: {
+      value: 10,
+      message: "Mobile number must be exactly 10 digits.",
+    },
+    maxLength: {
+      value: 10,
+      message: "Mobile number must be exactly 10 digits.",
+    },
+  },
+};

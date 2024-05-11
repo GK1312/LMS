@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import CardContainer from "@/app/components/auth/CardContainer";
 import SocialLogin from "@/app/components/auth/SocialLogin";
-import LoginForm from "@/app/components/auth/LoginForm";
+import SignInForm from "@/app/components/auth/SignInForm";
 
 const SignInPage = React.memo(function signInPage() {
   return (
@@ -17,10 +17,10 @@ const SignInPage = React.memo(function signInPage() {
             </p>
             <div className="h-[1px] flex flex-row flex-hr items-stretch justify-start bg-hr"></div>
           </div>
-          <LoginForm />
+          <SignInForm />
           <div className="text-label text-light leading-tight font-normal flex flex-row items-center gap-1">
             No account?{" "}
-            <Link href={"/"} className="text-accent font-semibold">
+            <Link href={"/sign-up"} className="text-accent font-semibold">
               Sign up
             </Link>
           </div>
