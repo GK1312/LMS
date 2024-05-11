@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useFormContext } from "react-hook-form";
 import { Eye, EyeOff } from "react-feather";
 
-const PrimaryInput = React.memo(function primaryInput({
+const PrimaryInput = React.memo(function PrimaryInput({
   name,
   label,
   type,

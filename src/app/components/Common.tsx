@@ -1,6 +1,6 @@
 import React from "react";
 
-const Loader = React.memo(function loader({
+const Loader = React.memo(function Loader({
   size = "xs",
   dark = true,
 }: {

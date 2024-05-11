@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import Image from "next/image";
 import Logo from "../../../../public/images/logo.png";
 
-const CardContainer = React.memo(function cardContainer({
+const CardContainer = React.memo(function CardContainer({
   title,
   subtitle,
   children,

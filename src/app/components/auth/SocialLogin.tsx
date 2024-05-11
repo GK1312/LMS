@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-const SocialLogin = React.memo(function socialLogin({
+const SocialLogin = React.memo(function SocialLogin({
   hasGoogle = true,
   hasLinkedin = true,
   hasFacebook = true,

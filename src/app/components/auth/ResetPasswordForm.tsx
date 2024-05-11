@@ -1,15 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import Loader from "@/app/components/Common";
 import { FormProvider, useForm } from "react-hook-form";
 import {
   email_validation,
+  mobile_number_validation,
   password_validation,
 } from "@/utils/inputValidations";
 import PrimaryInput from "../PrimaryInput";
-import Link from "next/link";
 
-const SignInForm = React.memo(function SignInForm() {
+const ResetPasswordForm = React.memo(function ResetPasswordForm() {
   const methods = useForm();
   const [success, setSuccess] = useState(false);
 
@@ -26,24 +25,17 @@ const SignInForm = React.memo(function SignInForm() {
         autoComplete="off"
       >
         <PrimaryInput {...email_validation} />
-        <PrimaryInput {...password_validation} />
         <button
           onClick={onSubmit}
           className="w-full min-h-9 px-5 py-2 text-xs text-white leading-none tracking-wider font-semibold uppercase inline-flex items-center justify-center bottom-0 outline-0 bg-accent select-none rounded-md transition-all duration-100 ease-in-out hover:bg-accent-dark"
         >
           Continue
         </button>
-        <Link
-          href={"/reset-password"}
-          className="text-label text-accent font-semibold"
-        >
-          Reset Password
-        </Link>
       </form>
     </FormProvider>
   );
 });
 
-SignInForm.displayName = "SignInFormComponent";
+ResetPasswordForm.displayName = "ResetPasswordFormComponent";
 
-export default SignInForm;
+export default ResetPasswordForm;

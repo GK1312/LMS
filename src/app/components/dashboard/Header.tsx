@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderComponent = React.memo(function headerComponent() {
+const HeaderComponent = React.memo(function HeaderComponent() {
   return (
     <>
       <main>

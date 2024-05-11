@@ -9,7 +9,7 @@ import {
 } from "@/utils/inputValidations";
 import PrimaryInput from "../PrimaryInput";
 
-const LoginForm = React.memo(function loginForm() {
+const SignUpForm = React.memo(function SignUpForm() {
   const methods = useForm();
   const [success, setSuccess] = useState(false);
 
@@ -39,6 +39,6 @@ const LoginForm = React.memo(function loginForm() {
   );
 });
 
-LoginForm.displayName = "LoginFormComponent";
+SignUpForm.displayName = "SignUpFormComponent";
 
-export default LoginForm;
+export default SignUpForm;
