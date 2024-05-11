@@ -65,7 +65,7 @@ const PrimaryInput = React.memo(function PrimaryInput({
 
 PrimaryInput.displayName = "PrimaryInputComponent";
 
-const InputError = ({ message = "Invalid input" }: { message: string }) => {
+const InputError = ({ message = "Invalid input" }: { message?: string }) => {
   return (
     <p className="mt-1 text-label text-danger leading-tight font-medium flex gap-1 absolute top-0 visible">
       {message}
