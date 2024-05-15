@@ -12,13 +12,16 @@ const config: Config = {
     extend: {
       width: {
         "100": "25rem",
+        "94": "23.5rem",
       },
       maxWidth: {
         "auth-card-sm": "calc(-0.75rem + 100vw)",
         "auth-card-lg": "calc(-5rem + 100vw)",
+        "default-header": "calc(-2rem + 100vw)",
       },
       fontSize: {
         label: "0.8125rem",
+        "label-md": "0.85rem",
       },
       flex: {
         social: "0 0 1.25rem",
@@ -38,6 +41,7 @@ const config: Config = {
         accent: "#103FEF",
         "accent-dark": "#0D33BF",
         danger: "rgb(240, 68, 56)",
+        "bg-light": "hsla(0, 0%, 0%, 0.04)",
       },
       backgroundImage: {},
     },

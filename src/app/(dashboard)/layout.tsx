@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import "../globals.css";
+import HeaderComponent from "../components/dashboard/Header";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={quicksand.className}>
         <ThemeProvider>
-          <h1>Dashboard Layout</h1>
+          <HeaderComponent />
           {children}
         </ThemeProvider>
       </body>

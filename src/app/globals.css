@@ -1,18 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
+/* Global styles */
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: auto !important;
 }
 
+/* Auth styling */
 .social_btn {
   background-color: #fff;
   transition: all 100ms ease-in-out;
@@ -67,6 +68,26 @@
   }
 }
 
+/* Header styling */
+.default_header {
+  will-change: transform, opacity, height;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  animation: 200ms ease 0s 1 normal none running profile_menu;
+}
+@keyframes profile_menu {
+  0% {
+    opacity: 0;
+    transform: scaleY(1) translateY(-6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateY(0px);
+  }
+}
+
+/* Loader styling */
 .loader {
   aspect-ratio: 1;
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 4px), #000 0);
