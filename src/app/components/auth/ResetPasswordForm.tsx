@@ -55,9 +55,9 @@ const ResetPasswordForm = React.memo(function ResetPasswordForm() {
               <ModalHeader className="text-xl leading-6 font-semibold flex flex-col gap-1">
                 Enter Verification Code
                 <p className="text-base text-light leading-5 font-normal">
-                  We've sent a code to{" "}
+                  We&apos;ve sent a code to{" "}
                   <span className="text-black font-semibold">
-                    "hello@gmail.com"
+                    &quot;hello@gmail.com&quot;
                   </span>
                 </p>
               </ModalHeader>

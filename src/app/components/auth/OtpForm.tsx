@@ -78,7 +78,7 @@ const OtpForm = React.memo(function OtpForm() {
         Verify OTP
       </button>
       <div className="text-label text-light leading-tight font-normal flex flex-row items-center gap-1">
-        Didn't get code?{" "}
+        Didn&apos;t get code?{" "}
         <button type="button" className="text-accent font-semibold">
           Click to resend
         </button>
