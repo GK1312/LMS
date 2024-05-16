@@ -95,9 +95,9 @@
 }
 .loader.default,
 .loader.dark-loader {
-  background: radial-gradient(farthest-side, #fff 94%, #0000) top/4px 4px
+  background: radial-gradient(farthest-side, #333 94%, #0000) top/4px 4px
       no-repeat,
-    conic-gradient(#0000 30%, #fff);
+    conic-gradient(#0000 30%, #333);
 }
 .loader.medium,
 .loader.dark-loader.medium {

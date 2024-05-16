@@ -3,6 +3,7 @@ import { Quicksand } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import "../globals.css";
 import HeaderComponent from "../components/dashboard/Header";
+import SessionAuthProvider from "@/providers/SessionProvider";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -24,10 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={quicksand.className}>
-        <ThemeProvider>
-          <HeaderComponent />
-          {children}
-        </ThemeProvider>
+        <SessionAuthProvider>
+          <ThemeProvider>
+            <HeaderComponent />
+            {children}
+          </ThemeProvider>
+        </SessionAuthProvider>
       </body>
     </html>
   );

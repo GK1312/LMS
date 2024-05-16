@@ -1,4 +1,7 @@
-import React, { ReactElement } from "react";
+"use client";
+import { signIn } from "next-auth/react";
+import React, { ReactElement, useState } from "react";
+import Loader from "../Common";
 
 const SocialLogin = React.memo(function SocialLogin({
   hasGoogle = true,
@@ -13,6 +16,7 @@ const SocialLogin = React.memo(function SocialLogin({
     icon: ReactElement;
     title: string;
     show: boolean;
+    name: string;
   }[] = [
     {
       icon: (
@@ -44,6 +48,7 @@ const SocialLogin = React.memo(function SocialLogin({
       ),
       title: "Continue with Google",
       show: hasGoogle,
+      name: "google",
     },
     {
       icon: (
@@ -75,6 +80,7 @@ const SocialLogin = React.memo(function SocialLogin({
       ),
       title: "Continue with LinkedIn",
       show: hasLinkedin,
+      name: "linkedin",
     },
     {
       icon: (
@@ -98,17 +104,32 @@ const SocialLogin = React.memo(function SocialLogin({
       ),
       title: "Continue with Facebook",
       show: hasFacebook,
+      name: "facebook",
     },
   ];
+  const [googleAuthLoading, setGoogleAuthLoading] = useState(false);
+  const [facebookAuthLoading, setFacebookAuthLoading] = useState(false);
+  const [linkedInAuthLoading, setLinkedInAuthLoading] = useState(false);
   return (
     <div className="grid items-stretch justify-stretch grid-cols-1 gap-2">
       {socialLoginsData.map((social, key) => (
         <button
           key={key}
           className="social_btn w-full min-h-9 px-5 py-3 text-sm leading-none font-normal tracking-[0.031] inline-flex items-center gap-4 border border-solid border-light-border select-none rounded-md"
+          onClick={() => {
+            signIn("google", {
+              callbackUrl: "/",
+              redirectUri: "http://localhost:3000/",
+            });
+            setGoogleAuthLoading(true);
+          }}
         >
           <span className="flex flex-row flex-social items-center justify-center">
-            {social.icon}
+            {social.name === "google" && googleAuthLoading ? (
+              <Loader dark />
+            ) : (
+              social.icon
+            )}
           </span>
           <div className="w-full flex flex-row items-center justify-start gap-2 overflow-hidden">
             <span className="text-sm leading-tight font-normal text-ellipsis whitespace-nowrap overflow-hidden">
