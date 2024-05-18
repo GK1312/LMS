@@ -1,21 +1,3 @@
-export const password_validation = {
-  name: "password",
-  label: "Password",
-  type: "password",
-  id: "password",
-  placeholder: "Enter password",
-  validation: {
-    required: {
-      value: true,
-      message: "Password is required.",
-    },
-    minLength: {
-      value: 8,
-      message: "Min 8 characters",
-    },
-  },
-};
-
 export const email_validation = {
   name: "email",
   label: "Email address",
@@ -57,6 +39,40 @@ export const mobile_number_validation = {
     maxLength: {
       value: 10,
       message: "Mobile number must be exactly 10 digits.",
+    },
+  },
+};
+export const password_validation = {
+  name: "password",
+  label: "Password",
+  type: "password",
+  id: "password",
+  placeholder: "Enter password",
+  validation: {
+    required: {
+      value: true,
+      message: "Password is required.",
+    },
+    minLength: {
+      value: 8,
+      message: "Min 8 characters",
+    },
+  },
+};
+export const search_validation = {
+  name: "search",
+  label: "Search",
+  type: "text",
+  id: "search",
+  placeholder: "Search for a course",
+  validation: {
+    required: {
+      value: true,
+      message: "Course name is required.",
+    },
+    minLength: {
+      value: 3,
+      message: "Search name has to be more than 3 characters",
     },
   },
 };

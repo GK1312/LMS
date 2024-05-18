@@ -32,6 +32,7 @@ const config: Config = {
         "auth-card": "rgba(0, 0, 0, 0.16) 0px 24px 48px",
         "input-focus": "rgb(145, 167, 247) 0px 0px 0px 1px",
         "input-danger": "rgb(240, 68, 56) 0px 0px 0px 1px",
+        "header-default": "rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px",
       },
       colors: {
         light: "rgba(0, 0, 0, 0.65)",
@@ -42,11 +43,20 @@ const config: Config = {
         "accent-dark": "#0D33BF",
         danger: "rgb(240, 68, 56)",
         "bg-light": "hsla(0, 0%, 0%, 0.04)",
+        "main-text": "#161439"
       },
       backgroundImage: {},
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui({
+    themes: {
+      light: {
+        colors: {
+          primary: '#103FEF'
+        }
+      }
+    }
+  })],
 };
 export default config;

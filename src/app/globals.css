@@ -125,3 +125,9 @@
     transform: rotate(1turn);
   }
 }
+/* next UI modification */
+.primary_tabs button {
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
