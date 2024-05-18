@@ -1,12 +1,12 @@
 import React from "react";
 import CourseCardType from "@/app/interfaces/courses";
 import CourseCard from "../dashboard/CourseCard";
-import Thumb from "../../../../public/images/course_thumb01.jpg";
-import Thumb2 from "../../../../public/images/course_thumb02.jpg";
-import Thumb3 from "../../../../public/images/course_thumb03.jpg";
-import Thumb4 from "../../../../public/images/course_thumb04.jpg";
-import Thumb5 from "../../../../public/images/course_thumb05.jpg";
-import Thumb6 from "../../../../public/images/course_thumb06.jpg";
+import Thumb from "../../../../public/images/courses/course_thumb01.jpg";
+import Thumb2 from "../../../../public/images/courses/course_thumb02.jpg";
+import Thumb3 from "../../../../public/images/courses/course_thumb03.jpg";
+import Thumb4 from "../../../../public/images/courses/course_thumb04.jpg";
+import Thumb5 from "../../../../public/images/courses/course_thumb05.jpg";
+import Thumb6 from "../../../../public/images/courses/course_thumb06.jpg";
 
 const MyCourses = React.memo(function MyCourses() {
   const MyCourses: CourseCardType[] = [

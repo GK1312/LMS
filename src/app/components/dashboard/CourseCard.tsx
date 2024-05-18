@@ -29,7 +29,7 @@ const CourseCard = React.memo(function CourseCard({
           <li>
             <Link
               href={""}
-              className="px-[0.815rem] py-[0.35rem] text-sm font-bold capitalize rounded-3xl bg-[#EFEFF2]"
+              className="px-[0.815rem] py-[0.35rem] text-sm font-bold capitalize rounded-3xl bg-[#EFEFF2] transition-all divide-success-200 ease-in-out hover:bg-accent hover:text-white"
             >
               {data.tag}
             </Link>

@@ -58,6 +58,7 @@ const config: Config = {
         dark: "hsla(0, 0%, 0%, 0.48)",
         hr: "rgba(0, 0, 0, 0.16)",
         "main-text": "#3a3a3a",
+        "secondary-bg": "#efebf9",
       },
       backgroundImage: {},
     },
